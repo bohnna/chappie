@@ -29,7 +29,7 @@ module Chappie
         @name            = name
         @staging_pass    = create_password
         @staging_db_pass = create_password
-        db_user = "#{@name}-#{@client}"
+        db_user = "#{@name}"
         @staging_db_user = db_user[0..16]
 
 
@@ -38,6 +38,7 @@ module Chappie
         sp_connection = Chappie::Generator::Staging.new @name, @client
         sp_user_id = sp_connection.create_user @staging_pass
         sp_app_id = sp_connection.create_site sp_user_id
+        puts @staging_db_user
         sp_db = sp_connection.create_database sp_app_id, @staging_db_user, @staging_db_pass
 
         local_install = Chappie::Generator::Vagrant.new @name, @client
