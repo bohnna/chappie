@@ -50,7 +50,7 @@ module Chappie
              "Please copy & paste the following into a new file in the WIKI: ",
              "===============================================================",
              "Staging Database: #{@name}_#{@client}",
-             "Staging Database User: #{@name}_#{@client}",
+             "Staging Database User: #{@staging_db_user}",
              "Staging Database Password: #{@staging_db_pass}",
              "Staging URL: #{@name}.#{@client}.staging.findsomewinmore.com",
              "Staging SFTP User: #{@name}-#{@client}",
