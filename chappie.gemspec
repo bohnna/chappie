@@ -6,8 +6,8 @@ require 'chappie/version'
 Gem::Specification.new do |spec|
   spec.name          = "chappie"
   spec.version       = Chappie::VERSION
-  spec.authors       = ["Sean Bolak", "Findsome & Winmore"]
-  spec.email         = ["seanbolak@gmail.com"]
+  spec.authors       = ["Sean Bolak", "Bohnna Chhim", "Findsome & Winmore"]
+  spec.email         = ["production@findsomewinmore.com"]
   spec.summary       = %q{Chappie automates the setup of new wordpress projects for development teams.}
   spec.homepage      = "http://www.github.com/findsomewinmore/chappie/"
   spec.license       = "MIT"

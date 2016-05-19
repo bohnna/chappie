@@ -11,7 +11,6 @@ module Chappie
         self.create_movefile
       end
 
-
       def create_movefile
         Dir.chdir("www/#{@name}/htdocs/wp-content/themes/#{@name}") do
             system "wordmove init"

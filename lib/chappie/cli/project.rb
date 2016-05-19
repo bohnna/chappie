@@ -78,6 +78,12 @@ module Chappie
         string = (0...10).map { o[rand(o.length)] }.join
         return string
       end
+
+      def valid_params(name, client)
+        if name.length > 11
+
+        end
+      end
     end
   end
 end
